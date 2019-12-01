@@ -1,0 +1,73 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body{
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background-image: url('./../images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 8em 1em 5em 1em;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+p{
+    line-height: 1.75em;
+    // padding-bottom: 2em;
+}
+.app-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.button{
+    background-color: green;
+    margin: 0.75em;
+    border-radius: 2em;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    border-bottom: 5px pink solid;
+}
+.purple{
+    background-color: purple;
+}
+header .company-logo{
+    width: 40%;
+    margin: 0 auto 2em auto;
+}
+section{
+    padding: 1em;
+    text-align: center;
+    padding: 1em 1em 5em 1em;
+}
+.features-list-one,
+.features-list-two,
+.client-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.features-list-icons{
+    width: 2.75em;
+}
+.client-list li{
+    width: 50%;
+    margin: 2.5em auto;
+}
+footer{
+    text-align: center;
+}
+footer .company-logo{
+    width: 15%;
+}
