@@ -1,0 +1,183 @@
+$StrongCyan: hsl(171, 66%, 45%);
+$DarkStrongCyan: hsl(171, 66%, 35%);
+$LightBlue: hsl(233, 100%, 70%);
+$DarkLightBlue: hsl(233, 100%, 62%);
+$DarkGrayishBlue: hsl(210, 10%, 33%);
+$GrayishBlue: hsl(201, 11%, 66%);
+$bai-jamjuree: "Bai Jamjuree", sans-serif;
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+body {
+	margin: 0;
+	font-size: 18px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	color: $GrayishBlue;
+}
+header {
+	background-image: url("./../images/bg-header-mobile.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
+	padding: 8em 1em 5em 1em;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+h1,
+h2,
+h3 {
+	color: $DarkGrayishBlue;
+	font-family: "Bai Jamjuree", sans-serif;
+}
+p {
+	line-height: 1.75em;
+	// padding-bottom: 2em;
+}
+.app-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.button {
+	background-color: $StrongCyan;
+	border-bottom: 3px $DarkStrongCyan solid;
+	margin: 0.75em;
+	border-radius: 2em;
+	padding: 1em;
+	color: white;
+	text-decoration: none;
+}
+.blue-button {
+	background-color: $LightBlue;
+	border-bottom: 3px $DarkLightBlue solid;
+}
+header .company-logo {
+	width: 40%;
+	margin: 0 auto 2em auto;
+}
+section,
+.main-workflow-feature {
+	text-align: center;
+	padding: 1em 1em 5em 1em;
+}
+.features-list,
+.workflow-features-list,
+.client-list,
+.site-pages,
+.social-links {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.features-list-icons {
+	width: 2.75em;
+}
+.client-list li img {
+	width: unset;
+	max-height: 50%;
+	margin: 1.5em auto;
+}
+ul.site-pages-list {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.site-pages li {
+	padding: 1em;
+}
+.social-links {
+	display: flex;
+	justify-content: center;
+	li {
+		padding: 0.5em 1em;
+		img {
+			width: 1.5em;
+		}
+	}
+}
+ul.site-pages {
+	margin-bottom: 2em;
+}
+footer {
+	text-align: center;
+	background-color: whitesmoke;
+	padding: 3em 0 1em 0;
+	font-family: $bai-jamjuree;
+	font-weight: 600;
+}
+footer .company-logo {
+	width: 15%;
+}
+@media only screen and (min-width: 1200px) {
+	header {
+		background-image: url("./../images/bg-header-desktop.png");
+		background-repeat: no-repeat;
+		padding-top: 6em;
+		padding-left: 20%;
+		padding-right: 20%;
+		.company-logo {
+			width: 10%;
+		}
+	}
+	.app-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: unset;
+		align-content: center;
+		justify-content: center;
+		a {
+			width: 12em;
+			font-family: $bai-jamjuree;
+		}
+	}
+	.desktop-features {
+		display: flex;
+		position: relative;
+		left: -5em;
+		ul {
+			margin-top: 3em;
+			margin-left: 7em;
+			padding-right: 5em;
+			text-align: left;
+		}
+	}
+	.main-feature {
+		padding: 1em 20em 5em 20em;
+	}
+	.mobile-features {
+		padding-bottom: 1em;
+		p {
+			width: 50%;
+			margin: 0 auto;
+		}
+		img {
+			width: 60%;
+			margin-top: 6em;
+		}
+	}
+	.workflow-features-list {
+		display: flex;
+		justify-content: center;
+		li {
+			max-width: 25%;
+			margin: 2em;
+		}
+	}
+	.client-list {
+		display: flex;
+		justify-content: center;
+		li {
+			margin: 0 3em;
+		}
+	}
+	.app-stores {
+		padding: 1em 20em 5em 20em;
+	}
+}
