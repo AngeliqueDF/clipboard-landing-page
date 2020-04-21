@@ -1,5 +1,6 @@
 //gulp
 var gulp = require('gulp')
+const { series } = require('gulp');
 //replace file paths in html and css
 var replace = require('gulp-replace');
 //minify html
@@ -69,6 +70,8 @@ function watch() {
     gulp.watch('src/scss/**/*.scss').on('change', browserSync.reload);
 }
 
+
+exports.build = series(img, html, css);
 exports.img = img;
 exports.html = html;
 exports.css = css;
