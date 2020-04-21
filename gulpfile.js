@@ -1,5 +1,5 @@
 //gulp
-const gulp = require('gulp')
+var gulp = require('gulp')
 //replace file paths in html and css
 var replace = require('gulp-replace');
 //minify html
@@ -35,15 +35,16 @@ function html() {
         .pipe(gulp.dest('./'))
         .pipe(browserSync.stream());
 }
-function style() {
+function css() {
     var plugins = [
         //config in .browserslistrc
         autoprefixer(),
         cssnano()
     ];
     return gulp.src('./src/scss/style.scss')
-        .pipe(replace('./../images/', './../../src/images/'))
         .pipe(sass()) // Converts Sass to CSS with gulp-sass
+        .pipe(gulp.dest('./src/css/'))
+        .pipe(replace('./../images/', './../../src/images/'))
         //parse CSS once
         //autoprefixer
         //optimization
@@ -64,10 +65,11 @@ function watch() {
     browserSync.reload()
     gulp.watch('src/*.html', html);
     gulp.watch('./src/*.html').on('change', browserSync.reload);
-    gulp.watch('src/scss/**/*.scss', style);
+    gulp.watch('src/scss/**/*.scss', css);
     gulp.watch('src/scss/**/*.scss').on('change', browserSync.reload);
 }
-exports.html = html;
+
 exports.img = img;
-exports.style = style;
+exports.html = html;
+exports.css = css;
 exports.watch = watch;
