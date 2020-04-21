@@ -11,10 +11,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Clipboard landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -28,23 +26,26 @@
       <p>
         <div class="app-buttons">
           <a class="button" href=""><span>Download for iOS</span></a>
-          <a class="button purple" href=""><span>Download for Mac</span></a>
+          <a class="button blue-button" href=""><span>Download for Mac</span></a>
         </div>
       </p>
     </header>
 
     <main>
-      <section>
+      <section class="main-feature">
         <h2>Keep track of your snippets</h2>
         <p>
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
+      </section>
 
+      <section class="desktop-features">
+      
         <img src="./images/image-computer.jpg" alt="computer image" />
 
-        <ul class="features-list-one">
+        <ul class="features-list">
           <li>
             <h3>Quick Search</h3>
             <p>
@@ -65,7 +66,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="mobile-features">
         <h2>Access Clipboard anywhere</h2>
         <p>
           Whether you’re on the go, or at your computer, you can access all your
@@ -75,12 +76,12 @@
       </section>
 
       <section>
-        <section>
+        <div class="main-workflow-feature">
           <h2>Supercharge your workflow</h2>
           <p>We’ve got the tools to boost your productivity.</p>
-        </section>
+        </div>
 
-        <ul class="features-list-two">
+        <ul class="workflow-features-list">
           <li>
               <article>
                 <img class="features-list-icons" src="./images/icon-blacklist.svg" alt="blacklist icon" />
@@ -127,7 +128,7 @@
         
       </section>
 
-      <section>
+      <section class="app-stores">
 
         <section>
           <h2>Clipboard for iOS and Mac OS</h2>
@@ -139,7 +140,7 @@
 
         <div class="app-buttons">
           <a class="button" href=""><span>Download for iOS</span></a>
-          <a class="button purple" href=""><span>Download for Mac</span></a>
+          <a class="button blue-button" href=""><span>Download for Mac</span></a>
         </div>
       </section>
 
@@ -147,7 +148,7 @@
         <img class="company-logo" src="./images/logo.svg" alt="Company logo" />
 
         <nav>
-          <ul>
+          <ul class="site-pages">
             <li>FAQs</li>
             <li>Contact Us</li>
             <li>Privacy Policy</li>
@@ -157,7 +158,7 @@
         </nav>
 
         <nav>
-          <ul>
+          <ul class="social-links">
             <li>
               <img src="./images/icon-facebook.svg" alt="Facebook logo" />
             </li>
