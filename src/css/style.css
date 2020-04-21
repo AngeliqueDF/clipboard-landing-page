@@ -158,8 +158,9 @@ footer .company-logo {
     footer nav {
       margin: auto; }
     footer .company-logo {
-      max-width: 4em;
-      margin: 0 6em; }
+      margin: auto;
+      height: 4em;
+      width: 4em; }
     footer div {
       display: flex;
       margin: 0 auto;
